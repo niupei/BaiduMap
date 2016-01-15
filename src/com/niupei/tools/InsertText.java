@@ -1,14 +1,20 @@
-package com.niupei.get;
+package com.niupei.tools;
 
 import java.io.*;
 
 /**
- * Created by iwan on 16/1/10.
+ * 写入到text
  */
-public class WriteFile {
-    public void write(String str) {
+public class InsertText {
 
-        File file = new File("guanzhou.txt");
+
+    /**
+     * @param str 写入的内容
+     * @param name 文本名称
+     */
+    public void write(String str,String name) {
+
+        File file = new File(name+".txt");
         if (!file.exists()) {
             try {
 
